@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Could import Bootstrap specifics, buttttt
+// @import "../node_modules/bootstrap/scss/functions";
+
+// Importing all of Bootstrap because this is a personal website and I don't care about bloat
+@import "../node_modules/bootstrap/scss/bootstrap";

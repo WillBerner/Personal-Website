@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import text from '../descriptions.json'
+
 @Component({
   selector: 'app-education',
   standalone: true,
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './education.component.scss'
 })
 export class EducationComponent {
+
+  public educationText:string = text.education;
 
 }

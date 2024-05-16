@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import text from '../descriptions.json'
+
 @Component({
   selector: 'app-about-me',
   standalone: true,
@@ -9,4 +11,6 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  public aboutMeText:string = text.aboutMe;
+  
 }
