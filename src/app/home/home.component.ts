@@ -11,6 +11,6 @@ import text from '../descriptions.json'
 })
 export class HomeComponent {
 
-  public aboutMeText:string = text.aboutMe;
+  public aboutMeText:string = text.home;
 
 }

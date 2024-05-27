@@ -11,5 +11,5 @@ import text from '../descriptions.json'
 })
 export class FeedbackComponent {
 
-  public feedbackText:string = text.aboutMe;
+  public feedbackText:string = text.feedback;
 }
