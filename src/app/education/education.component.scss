@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    padding: 16px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+section h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.degree-item,
+.project-item,
+.program-item {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.degree-item h3,
+.project-item h3,
+.program-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.degree-item p,
+.project-item p,
+.program-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.relevant-coursework ul,
+.certifications ul,
+.extracurricular ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.extracurricular li {
+    margin-bottom: 20px;
+}
+
+.extracurricular li h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.extracurricular li p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.academic-interests p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.relevant-coursework {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coursework-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.main-coursework,
+.other-coursework {
+    flex-basis: 45%;
+}
+
+.main-coursework h3,
+.other-coursework h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-coursework ul,
+.other-coursework ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

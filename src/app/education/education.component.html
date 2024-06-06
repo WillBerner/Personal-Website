@@ -1,5 +1,82 @@
-<div>
-    <p>
-        {{educationText}}
-    </p>
+<div class="education-container">
+    <section class="academic-degrees">
+        <h2>Education</h2>
+        <div class="degree-item">
+            <h3>{{educationText.unc.degree}}</h3>
+            <p>{{educationText.unc.universityName}}</p>
+            <p>{{educationText.unc.graduationYear}}</p>
+        </div>
+        <div class="degree-item">
+            <h3>{{educationText.chhs.degree}}</h3>
+            <p>{{educationText.chhs.universityName}}</p>
+            <p>{{educationText.chhs.graduationYear}}</p>
+        </div>
+        <!-- Add more degree items as needed -->
+    </section>
+    
+    <section class="relevant-coursework">
+        <h2>Relevant Coursework</h2>
+        <div class="coursework-columns">
+            <div class="main-coursework">
+                <h3>Main Coursework</h3>
+                <ul>
+                    <li *ngFor="let course of educationText.unc.coursework.cs">{{course}}</li>
+                </ul>
+            </div>
+            <div class="other-coursework">
+                <h3>Other Courses</h3>
+                <ul>
+                    <li *ngFor="let course of educationText.unc.coursework.math">{{course}}</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="academic-projects">
+        <h2>Academic Projects</h2>
+        <div class="project-item">
+            <h3>Project Title</h3>
+            <p>Project Description</p>
+            <p>Your Role</p>
+            <p>Achievements or Outcomes</p>
+        </div>
+        <!-- Add more project items as needed -->
+    </section>
+    
+    <section class="study-abroad">
+        <h2>Study Abroad / Exchange Programs</h2>
+        <div class="program-item">
+            <h3>Program Name</h3>
+            <p>Location</p>
+            <p>Duration</p>
+            <p>Achievements or Experiences</p>
+        </div>
+        <!-- Add more program items as needed -->
+    </section>
+    
+    <section class="certifications">
+        <h2>Professional Certifications</h2>
+        <ul>
+            <li>Certification Name 1</li>
+            <li>Certification Name 2</li>
+            <!-- Add more certifications as needed -->
+        </ul>
+    </section>
+    
+    <section class="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>
+                <h3>Activity/Organization Name</h3>
+                <p>Your Role or Position</p>
+                <p>Description or Achievements</p>
+            </li>
+            <!-- Add more extracurricular items as needed -->
+        </ul>
+    </section>
+    
+    <section class="academic-interests">
+        <h2>Academic Interests</h2>
+        <p>Describe your primary academic interests, research areas, or areas of expertise.</p>
+    </section>
 </div>
