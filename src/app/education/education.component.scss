@@ -82,11 +82,6 @@ section h2 {
     margin-bottom: 5px;
 }
 
-.academic-interests p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
 .relevant-coursework {
     display: flex;
     flex-direction: column;
@@ -116,3 +111,28 @@ section h2 {
     list-style-type: disc;
     margin-left: 20px;
 }
+
+.quadrants-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: 500px;
+  }
+  
+  .quadrant {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quadrant h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .quadrant ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }

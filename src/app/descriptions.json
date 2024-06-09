@@ -5,6 +5,33 @@
             "degree": "Bachelors of Science in Computer Science",
             "universityName": "University of North Carolina at Chapel Hill",
             "graduationYear": "August, 2020",
+            "studyAboard": {
+                "programName": "DIS Study Abroad in Scandenavia: Copenhagen",
+                "date": "Summer 2019",
+                "course": "COMP 180: Serious Games"
+            },
+            "certifications": {
+                "bootcamp": "UNC Chapel Hill Full Stack Web Development Bootcamp",
+                "bootcampDescription": "Shortly after graduating with a Computer Science degree from UNC Chapel Hill, I enrolled in their Web Development Bootcamp to continue to refine and practice my skills while I searched for a job. By the end of the Bootcamp, I had accepted an offer with Fidelity Investments to join them as a Full Stack Web Developer."
+            },
+            "extracurriculars": [
+                {
+                    "title": "Undergraduate Teaching Assistant for COMP 110, COMP 101, and COMP 116",
+                    "description": "For six of my eight semesters at UNC Chapel Hill, I worked as a TA in the Computer Science Department."
+                },
+                {
+                    "title": "Undergraduate Research Assistant in UNC's Graphics and Virtual Reality research group",
+                    "description": "For about half of my time at UNC, I worked as one of two undergraduates in the Telepresence Research Group."
+                },
+                {
+                    "title": "BeAM Makerspace Member",
+                    "description": "As a member of the Be A MAker (BeAM) Makerspace, I was trained on and had access to multiple makerspace workshops such as a wood shop, metal shop, 3D printers, laster cutters, etc."
+                },
+                {
+                    "title": "Intramural Soccer Player",
+                    "description": "I played intramural soccer every year I was at UNC. Sometimes, with Computer Science TA groups I was in."
+                }
+            ],
             "coursework": {
                 "cs": [
                     "COMP 110: Introduction to Programming",
@@ -22,7 +49,7 @@
                     "COMP 550: Algorithms and Analysis"
                 ],
                 "math": [
-                    "MATH 233: Calculus of Functions of Serveral Variables",
+                    "MATH 233: Calculus of Functions of Several Variables",
                     "MATH 381: Discrete Mathematics",
                     "MATH 383: First Course in Differential Equations",
                     "MATH 547: Linear Algebra",
