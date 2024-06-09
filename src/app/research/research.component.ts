@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 import text from '../descriptions.json'
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-research',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './research.component.html',
   styleUrl: './research.component.scss'
 })
