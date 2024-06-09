@@ -79,10 +79,47 @@
         }
      
     },
-    "teaching":"",
+    "teaching":{
+        "photoCaptions": {
+            "fredBrooks": {
+                "title": "Dr Fred Brooks and the COMP 110 Team",
+                "caption": "Turing Award winner Dr. Fred Brooks and the COMP 110 TA Team. I'm on the left in UNC blue."
+            },
+            "openHouse": {
+                "title": "Me explaining how Stereolithographic 3D printers work",
+                "caption": "Explaining how Stereolithographic 3D printers are used for research in the department during UNC Computer Science's 2019 Open House"
+            }
+        },
+        "title": "During my undergraduate studies at UNC-Chapel Hill, I worked in the Computer Science Department as an Undergraduate Teaching Assistant for three different classes across six semesters, including one summer semester.",
+        "classes": [
+            {
+                "title": "COMP 110: Intro to Programming",
+                "time": "January 2017 - August 2019",
+                "description": [
+                    "My first teaching experience came when I was a second-semester freshman. After completing my first programming class in the fall, COMP 110, I was one of a few selected from over 120 applicants by my professor Kris Jordan to join the TAing team for the 700-student course in the spring.",
+                    "First teaching in Java and later in TypeScript after the course changed languages, my main responsibilities were to tutor students one-on-one to help them complete assignments or review concepts and to help in the huge lectures when students had questions about in-class activities. Throughout my time with COMP 110, I individually tutored over 250 different students on over 350 separate occasions. I also mentored at semesterly hackathons, graded tests and quizzes, and answered student emails."
+                ]
+            },
+            {
+                "title": "COMP 101: Intro to Computing",
+                "time": "August 2018 - August 2019",
+                "description": [
+                    "Eventually, our department decided to hand over control of COMP 101 to Kris and the TAing team for COMP 110, starting the \"COMP 1101\" team.",
+                    "COMP 101 was very similar to COMP 110, teaching programming essentials in TypeScript, but was less rigorous and contained less content than its sister course. My responsibilities for the 300-student course were the same as they were for COMP 110; primarily tutoring during my \"office hours\" and assisting students in class, but also grading, answering student emails, and working at hackathons."
+                ]
+            },
+            {
+                "title": "COMP 110: Intro to Programming",
+                "time": "May 2020 - July 2020",
+                "description": [
+                    "I concluded my time at UNC-Chapel Hill as a Teaching Assistant for a third class, COMP 116, during the first summer session (or \"Maymester\") of 2020.",
+                    "I was hired in the spring by Professor Marc Neithammer, whom I knew of through my research experience in the department, to work alongside the instructor, graduate student Tom Christy, and three other TAs. This course was taught in Python and focused less on foundational programming fundamentals and more on applied uses for programming to help analyze scientific data, usually in the form of CSVs. I was responsible for one-fifth of the class - split between the four TAs and Tom - to grade assignments, tests, and answer student emails. I also held one-on-one tutoring sessions for a few hours each week and wrote problems to help students practice their skills."
+                ]
+            }
+        ]
+    },
     "research":"",
-    "exterprise": "",
-    "work":"",
+    "enterprise": "",
     "feedback": {
         "fidelity": [
             {

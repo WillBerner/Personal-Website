@@ -11,6 +11,6 @@ import text from '../descriptions.json'
 })
 export class WorkComponent {
 
-  public workText:string = text.work;
+  public workText= text.enterprise;
 
 }
