@@ -1,5 +1,12 @@
-<div>
-    <p>
-        {{feedbackText}}
-    </p>
-</div>
+<div class="feedback-container">
+    <div class="feedback-item" *ngFor="let feedback of feedbackText.fidelity">
+      <div class="person-info">
+        <h3>{{feedback.name}}</h3>
+        <p>{{feedback.role}}</p>
+        <p>{{feedback.time}}</p>
+      </div>
+      <div class="feedback-text">
+        <p>{{feedback.feedback}}</p>
+      </div>
+    </div>
+  </div>

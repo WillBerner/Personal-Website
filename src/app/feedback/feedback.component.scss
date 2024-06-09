@@ -1,0 +1,30 @@
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feedback-item {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .person-info {
+    flex: 0 0 30%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .person-info h3 {
+    margin-bottom: 5px;
+  }
+  
+  .feedback-text {
+    flex: 0 0 70%;
+    padding-left: 20px;
+  }

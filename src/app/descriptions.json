@@ -83,5 +83,44 @@
     "research":"",
     "exterprise": "",
     "work":"",
-    "feedback": ""
+    "feedback": {
+        "fidelity": [
+            {
+                "name": "Cristina Wong",
+                "role": "QA Engineer",
+                "time": "Two years",
+                "feedback": "Will has been wonderful to work with in the two years that we have worked together at Fidelity Investments. He is a gifted engineer who has particularly stood out by the positive energy he has brought to the team. I have admired his strong communication skills and engagement with our professional community. Moreover, the team could always rely on him when we were in a pinch! He would be an excellent asset to any software team."
+            },
+            {
+                "name": "Mounika Chigurupati",
+                "role": "QA Engineer",
+                "time": "18 months",
+                "feedback": "In the 18 months I've collaborated with Will, I've come to recognize his exceptional professionalism. His guidance was instrumental in understanding the functionalities of graphQL APIs for me and his patience in educating others is commendable. Will's work ethic and communication abilities are truly impressive. He demonstrates remarkable adaptability to various situations and business environments. His active role in organizing team-building activities has greatly enhanced our team's rapport. However, it's his readiness to assist others that truly distinguishes him. Working alongside Will has been a gratifying experience."
+            },
+            {
+                "name": "Arijit Paul",
+                "role": "Senior Software Engineer",
+                "time": "18 months",
+                "feedback": "Will is a highly skilled & detail-oriented software developer. I had the pleasure of working with Will at Fidelity Investments for about a year and a half. I was impressed by his technical expertise and his ability to deal with difficult problems effortlessly. He handles multiple projects with competing priorities extremely effectively. Super nice guy and always willing to help a team member. I highly recommend Will as a software engineer and true team-player."
+            }
+        ],
+        "unc": [],
+        "other": [],
+        "endorsements": [
+            "Git",
+            "Javascript",
+            "Java",
+            "Jenkins",
+            "Data Structures",
+            "AngularJS",
+            "uDeploy (IMB Urban Code Deploy)",
+            "Spring Boot",
+            "Jira",
+            "Splunk",
+            "Datadog",
+            "Insomnia",
+            "Programming",
+            "Customer Service"
+        ]
+    }
 }
