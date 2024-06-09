@@ -26,13 +26,9 @@
       </div>
   
     <div class="row justify-around mb-5">
-      <h6 class="text-center mb-3">Some anonymous direct feedback I've received from some of the hundreds of students I've helped in my one-on-one tutoring:</h6>
+      <h6 class="text-center mb-3">{{teachingText.feedback.title}}</h6>
       <ul class="list-group">
-        <li class="list-group-item text-center">"... it's always great working with Will."</li>
-        <li class="list-group-item text-center">"Made me realize I had the right idea when I started and guided me to fix the mistake. 7/7 TA."</li>
-        <li class="list-group-item text-center">"Will is a dope undergrad TA. I came in with a significant amount of code written ... and he helped point me in the right direction by ..."</li>
-        <li class="list-group-item text-center">"Explains well, really helps me understand the concepts."</li>
-        <li class="list-group-item text-center">"Great dude knows his stuff definitely deserves [an] award."</li>
+        <li class="list-group-item text-center" *ngFor="let feedback of teachingText.feedback.feedback">"{{feedback}}</li>
       </ul>
     </div>
   

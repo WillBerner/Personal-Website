@@ -116,7 +116,17 @@
                     "I was hired in the spring by Professor Marc Neithammer, whom I knew of through my research experience in the department, to work alongside the instructor, graduate student Tom Christy, and three other TAs. This course was taught in Python and focused less on foundational programming fundamentals and more on applied uses for programming to help analyze scientific data, usually in the form of CSVs. I was responsible for one-fifth of the class - split between the four TAs and Tom - to grade assignments, tests, and answer student emails. I also held one-on-one tutoring sessions for a few hours each week and wrote problems to help students practice their skills."
                 ]
             }
-        ]
+        ],
+        "feedback": {
+            "title": "Some anonymous feedback I've received from some of the hundreds of students I've helped in my one-on-one tutoring:",
+            "feedback": [
+                "... it's always great working with Will.",
+                "Made me realize I had the right idea when I started and guided me to fix the mistake. 7/7 TA.",
+                "Will is a dope undergrad TA. I came in with a significant amount of code written ... and he helped point me in the right direction by ...",
+                "Explains well, really helps me understand the concepts.",
+                "Great dude knows his stuff definitely deserves [an] award."
+            ]
+        }
     },
     "research":"",
     "enterprise": "",
