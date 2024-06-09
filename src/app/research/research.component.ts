@@ -11,6 +11,6 @@ import text from '../descriptions.json'
 })
 export class ResearchComponent {
   
-  public researchText:string = text.research;
+  public researchText = text.research;
 
 }
