@@ -13,11 +13,16 @@
 }
 
 .circular-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+
+.square-image {
+  width: 300px;
+  height: 300px;
 }
 
 .circular-image img {
@@ -34,4 +39,13 @@
 .text-container {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.text-container {
+  padding: 3rem
+}
+
+p {
+  padding-top: 1rem;
+  text-align: left;
 }

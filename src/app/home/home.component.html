@@ -3,9 +3,10 @@
       <img src="/assets/images/Will-Berner-Headshot.jpeg" alt="Picture of Will">
     </section>
     <section class="text-container">
-      <p>{{ aboutMeText }}</p>
+      <h6>{{ aboutMeText.title }}</h6>
+      <p *ngFor="let paragraph of aboutMeText.description">{{ paragraph }}</p>
     </section>
-    <section class="image-container">
+    <section class="image-container square-image">
       <img src="/assets/images/Sudo.jpg" alt="Picture of Will's dog Sudo">
     </section>
   </div>
