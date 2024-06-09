@@ -42,41 +42,18 @@
     
     <section class="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>Certification Name 1</li>
+        <ul *ngFor="let certificate of educationText.unc.certifications">
+          <h4>{{ certificate.title }}</h4>  
+          <li>{{ certificate.description }}</li>
         </ul>
     </section>
     
     <section class="extracurricular">
         <h2>Extracurricular Activities</h2>
         <div class="quadrants-container">
-            <div class="quadrant">
-              <h3>Extracurricular 1</h3>
-              <ul>
-                <li>Activity 1</li>
-                <li>Activity 2</li>
-              </ul>
-            </div>
-            <div class="quadrant">
-              <h3>Extracurricular 2</h3>
-              <ul>
-                <li>Activity 1</li>
-                <li>Activity 2</li>
-              </ul>
-            </div>
-            <div class="quadrant">
-              <h3>Extracurricular 3</h3>
-              <ul>
-                <li>Activity 1</li>
-                <li>Activity 2</li>
-              </ul>
-            </div>
-            <div class="quadrant">
-              <h3>Extracurricular 4</h3>
-              <ul>
-                <li>Activity 1</li>
-                <li>Activity 2</li>
-              </ul>
+            <div *ngFor="let extra of educationText.unc.extracurriculars" class="quadrant">
+              <h3>{{extra.title}}</h3>
+              <p>{{extra.description}}</p>
             </div>
           </div>
     </section>

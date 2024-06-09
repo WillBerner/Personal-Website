@@ -11,6 +11,6 @@ import text from '../descriptions.json'
 })
 export class TeachingComponent {
   
-  public teachingText:string = text.teaching;
+  public teachingText = text.teaching;
 
 }
