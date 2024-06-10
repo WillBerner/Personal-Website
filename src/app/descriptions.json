@@ -80,14 +80,16 @@
      
     },
     "teaching":{
-        "photoCaptions": {
+        "photos": {
             "fredBrooks": {
                 "title": "Dr Fred Brooks and the COMP 110 Team",
-                "caption": "Turing Award winner Dr. Fred Brooks and the COMP 110 TA Team. I'm on the left in UNC blue."
+                "caption": "Turing Award winner Dr. Fred Brooks and the COMP 110 TA Team. I'm on the left in UNC blue.",
+                "path": "./assets/images/teaching/FredBrooks.jpg"
             },
             "openHouse": {
                 "title": "Me explaining how Stereolithographic 3D printers work",
-                "caption": "Explaining how Stereolithographic 3D printers are used for research in the department during UNC Computer Science's 2019 Open House"
+                "caption": "Explaining how Stereolithographic 3D printers are used for research in the department during UNC Computer Science's 2019 Open House",
+                "path": "./assets/images/teaching/OpenHouse.jpg"
             }
         },
         "title": "During my undergraduate studies at UNC-Chapel Hill, I worked in the Computer Science Department as an Undergraduate Teaching Assistant for three different classes across six semesters, including one summer semester.",
@@ -132,41 +134,41 @@
         "link": "https://telepresence.web.unc.edu/people/",
         "title": "UNC Chapel Hill Telepresence (Graphics and Virtual Reality) Research Group",
         "time": "April 2018 - August 2020",
-        "photoCaptions": {
+        "photos": {
             "groupPhoto": {
                 "title": "UNC Graphics and Virtual Reality Research Group",
                 "caption": "UNC-Chapel Hill's Telepresence (Graphics and VR) Research Group - 2019. I'm on the far right.",
-                "path": "./assets/images/Telepresence.jpg"
+                "path": "./assets/images/research/Telepresence.jpg"
             },
             "aliens": {
                 "title": "Deformable Membrane Display Aliens",
                 "caption": "Three aliens at adjustable focal depths seen through the near-eye deformable membrane display.",
-                "path": "./assets/images/Aliens.jpeg"
+                "path": "./assets/images/research/Aliens.jpeg"
             },
             "deformableSetup": {
                 "title": "Deformable Membrane Display Setup",
                 "caption": "Headstand display, controlled by a system of hoses, valves, speakers, motors, pressure sensors, and an Arduino.",
-                "path": "./assets/images/Setup.jpeg"
+                "path": "./assets/images/research/Setup.jpeg"
             },
             "luminanceSetup": {
                 "title": "Contrast Tests I performed",
                 "caption": "Contrast test I ran to determine the effect of multiple beamsplitters on the luminance of an image.",
-                "path": "./assets/images/ContrastTest.jpeg"
+                "path": "./assets/images/research/ContrastTest.jpeg"
             },
             "beamsplitterSetup": {
                 "title": "Beamsplitter Contrast Tests",
                 "caption": "Contrast test setup. All permutations were tested and recorded.",
-                "path": "./assets/images/ContrastSetup.jpeg"
+                "path": "./assets/images/research/ContrastSetup.jpeg"
             },
             "eyeTrackingSetup": {
                 "title": "Egocentric headset and eyeglasses prototype",
                 "caption": "Early 2018 prototype I built for checking eye and mouth-tracking camera angles.",
-                "path": "./assets/images/Headset.jpg"
+                "path": "./assets/images/research/Headset.jpg"
             },
             "eyeTrackingCAD": {
                 "title": "Altering camera angles",
                 "caption": "Trying different locations for eye and mouth-tracking camera angles.",
-                "path": "./assets/images/CameraPositions.png"
+                "path": "./assets/images/research/CameraPositions.png"
             }
         },
         "studies": {
@@ -195,7 +197,15 @@
         }
 
     },
-    "enterprise": "",
+    "enterprise": {
+        "photos": {
+            "oldTeamHomer": {
+                "title": "Fidelity NetBenefits Homepage Team out to happy hour in 2023",
+                "caption": "Local North Carolina members of the Fidelity NetBenefits Homepage Team",
+                "path": "./assets/images/work/OldTeamHomer.jpeg"
+            }
+        }
+    },
     "feedback": {
         "fidelity": [
             {
