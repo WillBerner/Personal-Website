@@ -7,7 +7,7 @@
 
     <div class="row mb-4 justify-content-center">
         <div class="col-12">
-            <img src="{{researchText.photos.groupPhoto.path}}" class="large-image"
+            <img src="{{researchText.photos.groupPhoto.path}}" class="rounded large-image center-block d-block "
                 alt={{researchText.photos.groupPhoto.title}}
                 title={{researchText.photos.groupPhoto.title}} />
             <p class="text-center">{{researchText.photos.groupPhoto.caption}}</p>
@@ -26,20 +26,20 @@
                 </a>
             </h4>
             <div class="col-lg-4 col-sm-12 mb-3">
-                <img src={{researchText.photos.aliens.path}} class="img-responsive center-block d-block mx-auto" alt={{researchText.photos.aliens.title}} title={{researchText.photos.aliens.title}} />
+                <img src={{researchText.photos.aliens.path}} class="img-responsive center-block d-block mx-auto rounded" alt={{researchText.photos.aliens.title}} title={{researchText.photos.aliens.title}} />
                 <p class="text-center">
                     {{researchText.photos.aliens.caption}}
                 </p>
             </div>
             <div class="col-lg-4 col-sm-12 mb-3">
-                <img src={{researchText.photos.deformableSetup.path}} class="img-responsive center-block d-block mx-auto"
+                <img src={{researchText.photos.deformableSetup.path}} class="img-responsive center-block d-block mx-auto rounded"
                     alt={{researchText.photos.deformableSetup.title}} title={{researchText.photos.deformableSetup.title}} />
                 <p class="text-center">
                     {{researchText.photos.deformableSetup.caption}}
                 </p>
             </div>
             <div class="col-lg-4 col-sm-12 mb-3">
-                <img src={{researchText.photos.luminanceSetup.path}} class="img-responsive center-block d-block mx-auto"
+                <img src={{researchText.photos.luminanceSetup.path}} class="img-responsive center-block d-block mx-auto rounded"
                     alt={{researchText.photos.luminanceSetup.title}} 
                     title={{researchText.photos.luminanceSetup.title}} />
                 <p class="text-center">
@@ -53,7 +53,7 @@
 
         <p class="text-center" *ngFor="let paragraph of researchText.descriptions.dynamicFocusDisplay">{{paragraph}}</p>
 
-        <img src={{researchText.photos.beamsplitterSetup.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image"
+        <img src={{researchText.photos.beamsplitterSetup.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
             alt={{researchText.photos.beamsplitterSetup.title}} title={{researchText.photos.beamsplitterSetup.title}} />
         <p class="text-center">
             {{researchText.photos.beamsplitterSetup.caption}}
@@ -68,7 +68,7 @@
             </a>
         </h4>
 
-        <img src={{researchText.photos.eyeTrackingSetup.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image"
+        <img src={{researchText.photos.eyeTrackingSetup.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
             alt={{researchText.photos.eyeTrackingSetup.title}} title={{researchText.photos.eyeTrackingSetup.title}} />
         <p class="text-center mb-5">
             {{researchText.photos.eyeTrackingSetup.caption}}
@@ -77,7 +77,7 @@
         <p class="text-center" *ngFor="let paragraph of researchText.descriptions.dynamicScenes">
             {{paragraph}}</p>
 
-        <img src={{researchText.photos.eyeTrackingCAD.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image"
+        <img src={{researchText.photos.eyeTrackingCAD.path}} class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
             alt={{researchText.photos.eyeTrackingCAD.title}} title={{researchText.photos.eyeTrackingCAD.title}} />
         <p class="text-center mb-5">
             {{researchText.photos.eyeTrackingCAD.caption}}
