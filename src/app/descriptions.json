@@ -77,7 +77,7 @@
             ]
 
         }
-     
+    
     },
     "teaching":{
         "photos": {
@@ -203,6 +203,17 @@
                 "title": "Fidelity NetBenefits Homepage Team out to happy hour in 2023",
                 "caption": "Local North Carolina members of the Fidelity NetBenefits Homepage Team",
                 "path": "./assets/images/work/OldTeamHomer.jpeg"
+            }
+        },
+        "descriptions": {
+            "current":"I currently work as a Full-Stack Software Engineer at Fidelity Investments LLC in the Research Triangle Park of North Carolina.",
+            "L3": {
+                "title": "(L3) Associate Full-Stack Software Engineer",
+                "description": "I began my career as a Software Engineer in January 2022 at Fidelity Investments as part of their new-graduate technical training program, LEAP. After learning about the Fidelity enterprise work environment and technology stack, I was placed onto the NetBenefits Homepage team within the Workplace Investing business unit, where I worked as an (L3) Associate Full-Stack Software Engineer for a bit over a year."
+            },
+            "L4": {
+                "title": "(L4) Full-Stack Software Engineer",
+                "description": "As a Full-Stack Software Engineer on the NetBenefits Homepage team, I do a bit of everything to support the business and technical requirements of the organization. I work on a team with about 10 other developers, QA engineers, systems analyists, and other contributors to implement solutions to various division and company-wide initiatives. I work across out technology stack, from creating new micro frontend components with Angular and Lit-Element to new backend services with SpringBoot and Maven, as well as update legacy systems to remain in compliance, deploy apps with Jenkins and IBM uDeploy, and monitor dashboards and logs using tools like Splunk and Datadog."
             }
         }
     },
