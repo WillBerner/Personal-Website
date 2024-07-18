@@ -13,6 +13,7 @@
             "degree": "Bachelors of Science in Computer Science",
             "universityName": "University of North Carolina at Chapel Hill",
             "graduationYear": "August, 2020",
+            "photoPath": "/assets/images/education/UNC.png",
             "studyAboard": {
                 "programName": "DIS Study Abroad in Scandenavia: Copenhagen",
                 "date": "Summer 2019",
@@ -72,6 +73,7 @@
             "degree": "High School Diploma",
             "universityName": "Chapel Hill High School",
             "graduationYear": "June, 2016",
+            "photoPath": "/assets/images/education/CHHS.png",
             "coursework": [
                 
             ]
