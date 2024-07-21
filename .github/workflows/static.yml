@@ -24,7 +24,7 @@ jobs:
 
     - name: Prepare deployment
       run: |
-        cp dist/portfolio/index.html dist/portfolio/browser/404.html
+        cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
         touch dist/portfolio/browser/.nojekyll
 
     - name: Deploy to GitHub Pages
