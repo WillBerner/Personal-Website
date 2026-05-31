@@ -33,6 +33,7 @@
 .img-responsive {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .center-block {
@@ -92,4 +93,9 @@
 .medium-image {
   max-width: 400px;
   max-height: 400px;
+}
+
+.research-container img {
+  max-width: 100%;
+  height: auto;
 }
