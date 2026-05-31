@@ -4,17 +4,23 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Store the path before redirecting
-      var pathSegmentsToKeep = 1;
+      // For custom domains, we need to capture the path and redirect to index.html with encoded path
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/')
-          .replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      
+      // Capture the full path (excluding query string)
+      var pathName = l.pathname;
+      
+      // Only redirect if we're not already at index.html
+      if (pathName !== '/' && !pathName.includes('/?/')) {
+        // Encode the path and redirect to root with encoded path
+        var encodedPath = pathName.slice(1).replace(/&/g, '~and~');
+        var queryString = l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '';
+        
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/?/' + encodedPath + queryString + l.hash
+        );
+      }
     </script>
   </head>
   <body>
