@@ -280,9 +280,9 @@
             "Customer Service"
         ]
     },
-    "freelance": {
-        "title": "Freelance Work",
-        "description": "A selection of websites I've designed and built for clients.",
+    "websites": {
+        "title": "Web Development Work",
+        "description": "A selection of websites I've designed and built for work, friends, and clients.",
         "projects": [{
             "name": "Max Berner Architecture Portfolio",
             "type": "Portfolio",

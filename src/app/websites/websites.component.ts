@@ -7,11 +7,11 @@ import descriptions from '../descriptions.json';
   selector: 'app-work',
   standalone: true,
   imports: [NgFor],
-  templateUrl: './freelance.component.html',
-  styleUrl: './freelance.component.scss'
+  templateUrl: './websites.component.html',
+  styleUrl: './websites.component.scss'
 })
-export class FreelanceComponent {
+export class WebsitesComponent {
 
-  public freelance = descriptions.freelance;
+  public websites = descriptions.websites;
 
 }

@@ -1,12 +1,12 @@
-<div class="freelance-container container">
+<div class="websites-container container">
   <div class="row justify-content-center mb-4">
-    <h2 class="text-center">{{ freelance.title }}</h2>
-    <p class="text-center text-muted">{{ freelance.description }}</p>
+    <h2 class="text-center">{{ websites.title }}</h2>
+    <p class="text-center text-muted">{{ websites.description }}</p>
     <p class="text-center text-muted">Work In Progress</p>
   </div>
 
   <div class="projects-grid">
-    <div class="project-card" *ngFor="let project of freelance.projects">
+    <div class="project-card" *ngFor="let project of websites.projects">
       <div class="project-card-header">
         <h5>{{ project.name }}</h5>
         <span class="project-type">{{ project.type }}</span>
