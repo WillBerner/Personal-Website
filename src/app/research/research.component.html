@@ -1,105 +1,111 @@
 <div class="research-container container">
-    <div class="row justify-content-center mb-4">
-        <h2 class="text-center">Research Experience</h2>
-        <p class="text-center"><a href={{researchText.link}} target="_blank" rel="noreferrer">{{researchText.title}}</a>
-        </p>
-        <p class="text-center"><small>{{researchText.time}}</small></p>
+  <div class="row justify-content-center mb-4">
+    <h2 class="text-center">Research Experience</h2>
+    <p class="text-center"><a href={{researchText.link}} target="_blank" rel="noreferrer">{{researchText.title}}</a>
+  </p>
+  <p class="text-center"><small>{{researchText.time}}</small></p>
+</div>
+
+<div class="row mb-4 justify-content-center">
+  <div class="col-12">
+    <img src="{{researchText.photos.groupPhoto.path}}" class="rounded large-image center-block d-block "
+      alt={{researchText.photos.groupPhoto.title}} title={{researchText.photos.groupPhoto.title}} />
+      <p class="text-center">{{researchText.photos.groupPhoto.caption}}</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        @for (paragraph of researchText.descriptions.general; track paragraph) {
+          <h6 class="text-center mb-4">{{paragraph}}
+          </h6>
+        }
+      </div>
     </div>
 
-    <div class="row mb-4 justify-content-center">
-        <div class="col-12">
-            <img src="{{researchText.photos.groupPhoto.path}}" class="rounded large-image center-block d-block "
-                alt={{researchText.photos.groupPhoto.title}} title={{researchText.photos.groupPhoto.title}} />
-            <p class="text-center">{{researchText.photos.groupPhoto.caption}}</p>
-        </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4 class="text-center mb-4">
+          <a href="{{researchText.studies.dynamicFocus.link}}" target="_blank" rel="noreferrer">
+            {{researchText.studies.dynamicFocus.title}}
+          </a>
+        </h4>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12">
-                <h6 class="text-center mb-4" *ngFor="let paragraph of researchText.descriptions.general">{{paragraph}}
-                </h6>
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
+        <img src="{{researchText.photos.aliens.path}}" class="img-fluid rounded mx-auto d-block"
+          alt="{{researchText.photos.aliens.title}}" title="{{researchText.photos.aliens.title}}" />
+          <p class="text-center mt-2">
+            {{researchText.photos.aliens.caption}}
+          </p>
+        </div>
+        <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
+          <img src="{{researchText.photos.deformableSetup.path}}" class="img-fluid rounded mx-auto d-block"
+            alt="{{researchText.photos.deformableSetup.title}}"
+            title="{{researchText.photos.deformableSetup.title}}" />
+            <p class="text-center mt-2">
+              {{researchText.photos.deformableSetup.caption}}
+            </p>
+          </div>
+          <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
+            <img src="{{researchText.photos.luminanceSetup.path}}" class="img-fluid rounded mx-auto d-block"
+              alt="{{researchText.photos.luminanceSetup.title}}"
+              title="{{researchText.photos.luminanceSetup.title}}" />
+              <p class="text-center mt-2">
+                {{researchText.photos.luminanceSetup.caption}}
+              </p>
             </div>
+          </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-12">
-                <h4 class="text-center mb-4">
-                    <a href="{{researchText.studies.dynamicFocus.link}}" target="_blank" rel="noreferrer">
-                        {{researchText.studies.dynamicFocus.title}}
-                    </a>
-                </h4>
-            </div>
-        </div>
+        <div class="row justify-content-around mb-5">
 
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
-                <img src="{{researchText.photos.aliens.path}}" class="img-fluid rounded mx-auto d-block"
-                    alt="{{researchText.photos.aliens.title}}" title="{{researchText.photos.aliens.title}}" />
-                <p class="text-center mt-2">
-                    {{researchText.photos.aliens.caption}}
-                </p>
-            </div>
-            <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
-                <img src="{{researchText.photos.deformableSetup.path}}" class="img-fluid rounded mx-auto d-block"
-                    alt="{{researchText.photos.deformableSetup.title}}"
-                    title="{{researchText.photos.deformableSetup.title}}" />
-                <p class="text-center mt-2">
-                    {{researchText.photos.deformableSetup.caption}}
-                </p>
-            </div>
-            <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2">
-                <img src="{{researchText.photos.luminanceSetup.path}}" class="img-fluid rounded mx-auto d-block"
-                    alt="{{researchText.photos.luminanceSetup.title}}"
-                    title="{{researchText.photos.luminanceSetup.title}}" />
-                <p class="text-center mt-2">
-                    {{researchText.photos.luminanceSetup.caption}}
-                </p>
-            </div>
-        </div>
-    </div>
+          @for (paragraph of researchText.descriptions.dynamicFocusDisplay; track paragraph) {
+            <p class="text-center" innerHTML="{{paragraph}}"></p>
+          }
 
-    <div class="row justify-content-around mb-5">
-
-        <p class="text-center" *ngFor="let paragraph of researchText.descriptions.dynamicFocusDisplay" innerHTML="{{paragraph}}"></p>
-
-        <img src={{researchText.photos.beamsplitterSetup.path}}
+          <img src={{researchText.photos.beamsplitterSetup.path}}
             class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
             alt={{researchText.photos.beamsplitterSetup.title}} title={{researchText.photos.beamsplitterSetup.title}} />
-        <p class="text-center">
-            {{researchText.photos.beamsplitterSetup.caption}}
-        </p>
+            <p class="text-center">
+              {{researchText.photos.beamsplitterSetup.caption}}
+            </p>
 
-    </div>
+          </div>
 
-    <div class="row mt-4 justify-content-between">
-        <h4 class="text-center mb-2">
-            <a href={{researchText.studies.dynamicScenes.link}} target="_blank" rel="noreferrer">
+          <div class="row mt-4 justify-content-between">
+            <h4 class="text-center mb-2">
+              <a href={{researchText.studies.dynamicScenes.link}} target="_blank" rel="noreferrer">
                 {{researchText.studies.dynamicScenes.title}}
-            </a>
-        </h4>
+              </a>
+            </h4>
 
-        <img src={{researchText.photos.eyeTrackingSetup.path}}
-            class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
-            alt={{researchText.photos.eyeTrackingSetup.title}} title={{researchText.photos.eyeTrackingSetup.title}} />
-        <p class="text-center mb-5">
-            {{researchText.photos.eyeTrackingSetup.caption}}
-        </p>
+            <img src={{researchText.photos.eyeTrackingSetup.path}}
+              class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
+              alt={{researchText.photos.eyeTrackingSetup.title}} title={{researchText.photos.eyeTrackingSetup.title}} />
+              <p class="text-center mb-5">
+                {{researchText.photos.eyeTrackingSetup.caption}}
+              </p>
 
-        <p class="text-center" *ngFor="let paragraph of researchText.descriptions.dynamicScenes">
-            {{paragraph}}</p>
+              @for (paragraph of researchText.descriptions.dynamicScenes; track paragraph) {
+                <p class="text-center">
+                {{paragraph}}</p>
+              }
 
-        <img src={{researchText.photos.eyeTrackingCAD.path}}
-            class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
-            alt={{researchText.photos.eyeTrackingCAD.title}} title={{researchText.photos.eyeTrackingCAD.title}} />
-        <p class="text-center mb-5">
-            {{researchText.photos.eyeTrackingCAD.caption}}
-        </p>
+              <img src={{researchText.photos.eyeTrackingCAD.path}}
+                class="img-responsive center-block d-block mx-auto mt-4 large-image rounded"
+                alt={{researchText.photos.eyeTrackingCAD.title}} title={{researchText.photos.eyeTrackingCAD.title}} />
+                <p class="text-center mb-5">
+                  {{researchText.photos.eyeTrackingCAD.caption}}
+                </p>
 
-        <h5 class="text-center">
-            To learn more about UNC Telepresence's past and present research, check out the <a
+                <h5 class="text-center">
+                  To learn more about UNC Telepresence's past and present research, check out the <a
                 href="https://telepresence.web.unc.edu/" target="_blank" rel="noreferrer">group's webpage</a>.
-        </h5>
+              </h5>
 
-    </div>
-</div>
+            </div>
+          </div>

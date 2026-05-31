@@ -1,71 +1,79 @@
 <div class="education-container container">
-    <section class="academic-degrees text-center">
-        <h2>Education</h2>
-        <div class="degree-container mb-4">
-            <div class="degree-image">
-                <img src={{educationText.unc.photoPath}} alt="UNC Logo" class="img-fluid rounded">
-            </div>
-            <div class="degree-info">
-                <h3>{{educationText.unc.universityName}}</h3>
-                <p>{{educationText.unc.degree}}</p>
-                <p>{{educationText.unc.graduationYear}}</p>
-            </div>
-        </div>
+  <section class="academic-degrees text-center">
+    <h2>Education</h2>
+    <div class="degree-container mb-4">
+      <div class="degree-image">
+        <img src={{educationText.unc.photoPath}} alt="UNC Logo" class="img-fluid rounded">
+      </div>
+      <div class="degree-info">
+        <h3>{{educationText.unc.universityName}}</h3>
+        <p>{{educationText.unc.degree}}</p>
+        <p>{{educationText.unc.graduationYear}}</p>
+      </div>
+    </div>
 
-        <div class="degree-container mb-4">
-            <div class="degree-image">
-                <img src={{educationText.chhs.photoPath}} alt="CHHS Logo" class="img-fluid rounded">
-            </div>
-            <div class="degree-info">
-                <h3>{{educationText.chhs.universityName}}</h3>
-                <p>{{educationText.chhs.degree}}</p>
-                <p>{{educationText.chhs.graduationYear}}</p>
-            </div>
-        </div>
-    </section>
+    <div class="degree-container mb-4">
+      <div class="degree-image">
+        <img src={{educationText.chhs.photoPath}} alt="CHHS Logo" class="img-fluid rounded">
+      </div>
+      <div class="degree-info">
+        <h3>{{educationText.chhs.universityName}}</h3>
+        <p>{{educationText.chhs.degree}}</p>
+        <p>{{educationText.chhs.graduationYear}}</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="relevant-coursework">
-        <h2>Relevant Coursework</h2>
-        <div class="coursework-columns">
-            <div class="main-coursework">
-                <h3>Main Coursework</h3>
-                <ul>
-                    <li *ngFor="let course of educationText.unc.coursework.cs">{{course}}</li>
-                </ul>
-            </div>
-            <div class="other-coursework">
-                <h3>Other Major-Based Coursework</h3>
-                <ul>
-                    <li *ngFor="let course of educationText.unc.coursework.math">{{course}}</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="study-abroad">
-        <h2>Study Abroad</h2>
-        <div class="program-item">
-            <h3>{{educationText.unc.studyAboard.programName}}</h3>
-            <p>{{educationText.unc.studyAboard.date}}</p>
-            <p>{{educationText.unc.studyAboard.course}}</p>
-        </div>
-    </section>
-
-    <section class="certifications">
-        <h2>Certifications</h2>
-        <ul *ngFor="let certificate of educationText.unc.certifications">
-            <h4>{{ certificate.title }}</h4>
-            <li>{{ certificate.description }}</li>
+  <section class="relevant-coursework">
+    <h2>Relevant Coursework</h2>
+    <div class="coursework-columns">
+      <div class="main-coursework">
+        <h3>Main Coursework</h3>
+        <ul>
+          @for (course of educationText.unc.coursework.cs; track course) {
+            <li>{{course}}</li>
+          }
         </ul>
-    </section>
+      </div>
+      <div class="other-coursework">
+        <h3>Other Major-Based Coursework</h3>
+        <ul>
+          @for (course of educationText.unc.coursework.math; track course) {
+            <li>{{course}}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section class="extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <div class="quadrants-container">
-            <div *ngFor="let extra of educationText.unc.extracurriculars" class="quadrant">
-                <h3 class="text-center">{{extra.title}}</h3>
-                <p class="text-center">{{extra.description}}</p>
-            </div>
+  <section class="study-abroad">
+    <h2>Study Abroad</h2>
+    <div class="program-item">
+      <h3>{{educationText.unc.studyAboard.programName}}</h3>
+      <p>{{educationText.unc.studyAboard.date}}</p>
+      <p>{{educationText.unc.studyAboard.course}}</p>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <h2>Certifications</h2>
+    @for (certificate of educationText.unc.certifications; track certificate) {
+      <ul>
+        <h4>{{ certificate.title }}</h4>
+        <li>{{ certificate.description }}</li>
+      </ul>
+    }
+  </section>
+
+  <section class="extracurricular">
+    <h2>Extracurricular Activities</h2>
+    <div class="quadrants-container">
+      @for (extra of educationText.unc.extracurriculars; track extra) {
+        <div class="quadrant">
+          <h3 class="text-center">{{extra.title}}</h3>
+          <p class="text-center">{{extra.description}}</p>
         </div>
-    </section>
+      }
+    </div>
+  </section>
 </div>

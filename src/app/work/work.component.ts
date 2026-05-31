@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { NgForOf, NgClass } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 import text from '../descriptions.json'
 
 @Component({
-  selector: 'app-work',
-  standalone: true,
-  imports: [NgClass, NgForOf],
-  templateUrl: './work.component.html',
-  styleUrl: './work.component.scss'
+    selector: 'app-work',
+    templateUrl: './work.component.html',
+    styleUrl: './work.component.scss'
 })
 export class WorkComponent {
 

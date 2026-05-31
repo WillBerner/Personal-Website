@@ -8,33 +8,39 @@
       [src]="teachingText.photos.fredBrooks.path"
       [alt]="teachingText.photos.fredBrooks.title"
       [title]="teachingText.photos.fredBrooks.title" />
-    <p>{{ teachingText.photos.fredBrooks.caption }}</p>
-  </div>
-
-  <div class="teaching-intro">
-    <h6 class="text-center">{{ teachingText.title }}</h6>
-  </div>
-
-  <div class="classes-row">
-    <div class="class-card" *ngFor="let class of teachingText.classes">
-      <h4 class="text-center">{{ class.title }}</h4>
-      <small class="class-time text-center d-block">{{ class.time }}</small>
-      <p class="text-center" *ngFor="let description of class.description">{{ description }}</p>
+      <p>{{ teachingText.photos.fredBrooks.caption }}</p>
     </div>
-  </div>
 
-  <div class="student-feedback">
-    <h6 class="text-center">{{ teachingText.feedback.title }}</h6>
-    <ul class="feedback-list">
-      <li *ngFor="let feedback of teachingText.feedback.feedback">"{{ feedback }}"</li>
-    </ul>
-  </div>
+    <div class="teaching-intro">
+      <h6 class="text-center">{{ teachingText.title }}</h6>
+    </div>
 
-  <div class="bottom-photo">
-    <img
-      [src]="teachingText.photos.openHouse.path"
-      [alt]="teachingText.photos.openHouse.title"
-      [title]="teachingText.photos.openHouse.title" />
-    <p>{{ teachingText.photos.openHouse.caption }}</p>
-  </div>
-</div>
+    <div class="classes-row">
+      @for (class of teachingText.classes; track class) {
+        <div class="class-card">
+          <h4 class="text-center">{{ class.title }}</h4>
+          <small class="class-time text-center d-block">{{ class.time }}</small>
+          @for (description of class.description; track description) {
+            <p class="text-center">{{ description }}</p>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="student-feedback">
+      <h6 class="text-center">{{ teachingText.feedback.title }}</h6>
+      <ul class="feedback-list">
+        @for (feedback of teachingText.feedback.feedback; track feedback) {
+          <li>"{{ feedback }}"</li>
+        }
+      </ul>
+    </div>
+
+    <div class="bottom-photo">
+      <img
+        [src]="teachingText.photos.openHouse.path"
+        [alt]="teachingText.photos.openHouse.title"
+        [title]="teachingText.photos.openHouse.title" />
+        <p>{{ teachingText.photos.openHouse.caption }}</p>
+      </div>
+    </div>

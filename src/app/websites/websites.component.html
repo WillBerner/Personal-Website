@@ -6,18 +6,22 @@
   </div>
 
   <div class="projects-grid">
-    <div class="project-card" *ngFor="let project of websites.projects">
-      <div class="project-card-header">
-        <h5>{{ project.name }}</h5>
-        <span class="project-type">{{ project.type }}</span>
+    @for (project of websites.projects; track project) {
+      <div class="project-card">
+        <div class="project-card-header">
+          <h5>{{ project.name }}</h5>
+          <span class="project-type">{{ project.type }}</span>
+        </div>
+        <p class="project-description" [innerHTML]="project.description"></p>
+        <div class="tech-badges">
+          @for (tech of project.stack; track tech) {
+            <span class="badge">{{ tech }}</span>
+          }
+        </div>
+        <a class="visit-btn" [href]="project.url" target="_blank" rel="noopener noreferrer">
+          Visit Site ↗
+        </a>
       </div>
-      <p class="project-description" [innerHTML]="project.description"></p>
-      <div class="tech-badges">
-        <span class="badge" *ngFor="let tech of project.stack">{{ tech }}</span>
-      </div>
-      <a class="visit-btn" [href]="project.url" target="_blank" rel="noopener noreferrer">
-        Visit Site ↗
-      </a>
-    </div>
+    }
   </div>
 </div>
