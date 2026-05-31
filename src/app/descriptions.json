@@ -281,6 +281,14 @@
         ]
     },
     "freelance": {
-        
+        "title": "Freelance Work",
+        "description": "A selection of websites I've designed and built for clients.",
+        "projects": [{
+            "name": "Max Berner Architecture Portfolio",
+            "type": "Portfolio",
+            "description": "A website portfolio for my brother, Max Berner, an architecture graduate of the Glasgow School of Art in Glasgow, Scotland. The site features a custom design he specifically requested and layout to showcase his work. The site was inspired by the website <a href=\"http://badbadbadbad.com\" target=\"_blank\" rel=\"noopener noreferrer\">badbadbadbad.com</a>",
+            "stack": ["Angular", "CSS", "HTML"],
+            "url": "MaxwellBerner.com"
+        }]
     }
 }

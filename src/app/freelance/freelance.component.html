@@ -1,3 +1,23 @@
 <div class="freelance-container container">
+  <div class="row justify-content-center mb-4">
+    <h2 class="text-center">{{ freelance.title }}</h2>
+    <p class="text-center text-muted">{{ freelance.description }}</p>
+    <p class="text-center text-muted">Work In Progress</p>
+  </div>
 
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of freelance.projects">
+      <div class="project-card-header">
+        <h5>{{ project.name }}</h5>
+        <span class="project-type">{{ project.type }}</span>
+      </div>
+      <p class="project-description" [innerHTML]="project.description"></p>
+      <div class="tech-badges">
+        <span class="badge" *ngFor="let tech of project.stack">{{ tech }}</span>
+      </div>
+      <a class="visit-btn" [href]="project.url" target="_blank" rel="noopener noreferrer">
+        Visit Site ↗
+      </a>
+    </div>
+  </div>
 </div>
