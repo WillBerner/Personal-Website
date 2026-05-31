@@ -1,166 +1,249 @@
+// ── Shared section style ─────────────────────────────────────────────────────
+
 .education-container {
-    padding: 20px;
-}
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    background-color: #f4f4f4;
-    padding: 40px;
-    text-align: center;
-}
-
-.header-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.header-content p {
-    font-size: 18px;
-    color: #666;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.degree-item,
-.project-item,
-.program-item {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.degree-item h3,
-.project-item h3,
-.program-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.degree-item p,
-.project-item p,
-.program-item p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 5px;
-}
-
-.relevant-coursework ul,
-.certifications ul,
-.extracurricular ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.extracurricular li {
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1a1a2e;
+    display: inline-block;
+  }
 }
 
-.extracurricular li h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
+// ── Academic Degrees ─────────────────────────────────────────────────────────
 
-.extracurricular li p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 5px;
-}
-
-.relevant-coursework {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.coursework-columns {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-}
-
-.main-coursework,
-.other-coursework {
-    flex-basis: 45%;
-}
-
-.main-coursework h3,
-.other-coursework h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.main-coursework ul,
-.other-coursework ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.quadrants-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    height: 500px;
-}
-
-.quadrant {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.quadrant h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.quadrant ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.academic-degrees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .degree-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  padding: 24px;
+  width: 100%;
+  max-width: 700px;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.11);
+  }
 }
 
 .degree-image {
-    flex: 0 0 100px;
-    /* Adjust this value to change the image width */
+  flex: 0 0 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .degree-info {
-    flex: 1;
+  flex: 1;
+  text-align: left;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+  }
 }
 
-@media (max-width: 576px) {
+// ── Relevant Coursework ──────────────────────────────────────────────────────
+
+.relevant-coursework {
+  display: flex;
+  flex-direction: column;
+}
+
+.coursework-columns {
+  display: flex;
+  gap: 24px;
+
+  .main-coursework,
+  .other-coursework {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    padding: 24px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e0e4f0;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li {
+      font-size: 14px;
+      color: #444;
+      padding: 6px 10px;
+      background: #f4f6fb;
+      border-radius: 6px;
+      border-left: 3px solid #1a1a2e;
+    }
+  }
+}
+
+// ── Study Abroad ─────────────────────────────────────────────────────────────
+
+.study-abroad {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-item {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  padding: 24px;
+  border-left: 5px solid #1a1a2e;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+
+// ── Certifications ───────────────────────────────────────────────────────────
+
+.certifications {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    margin: 0 0 16px 0;
+    padding: 0;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    li {
+      font-size: 14px;
+      color: #555;
+      padding: 12px 16px;
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      border-left: 4px solid #1a1a2e;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+// ── Extracurriculars ─────────────────────────────────────────────────────────
+
+.extracurricular {
+  display: flex;
+  flex-direction: column;
+}
+
+.quadrants-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.quadrant {
+  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.2s, transform 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #a8b4d8;
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+
+// ── Mobile ───────────────────────────────────────────────────────────────────
+
+@media (max-width: 640px) {
   .degree-container {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0px !important;
+    text-align: center;
   }
 
   .degree-image {
-    margin-bottom: 10px;
     width: 120px;
     max-width: 120px;
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+  .degree-info {
+    text-align: center;
+  }
+
+  .coursework-columns {
+    flex-direction: column;
+  }
+
+  .quadrants-container {
+    grid-template-columns: 1fr;
   }
 }
