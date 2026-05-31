@@ -295,6 +295,12 @@
             "description": "My own personal website portfolio. I designed and built this site to showcase my work experience, education, research, and teaching. I wanted to create a site that was simple, clean, and easy to navigate while also being visually appealing. The site is built with Angular and hosted on GitHub Pages.",
             "stack": ["Angular", "Bootstrap", "HTML"],
             "url": "https://www.WillBerner.com"
+        },{
+            "name": "Fidelity Investments NetBenefits Homepage (Post Login)",
+            "type": "Enterprise Web Application",
+            "description": "The NetBenefits Homepage is the landing page for Fidelity Investments' NetBenefits website, which is the primary website for Fidelity's Workplace Investing business unit. The homepage is a highly customized and personalized experience for each user, built out of a number of standalone client and server applications, featuring a variety of widgets and components that provide users with quick access to their account information, news, and other relevant content. I worked on two different teams responsible for the homepage over the course of three years, contributing to both frontend and backend development work to support various initiatives and projects.",
+            "stack": ["Angular", "Lit-Element", "Nx", "Spring Boot", "Java", "Maven"],
+            "url": "https://www.NetBenefits.com"
         }]
     }
 }
