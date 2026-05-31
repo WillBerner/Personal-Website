@@ -208,17 +208,21 @@
             }
         },
         "descriptions": {
-            "current":"I currently work as a Full-Stack Software Engineer at Fidelity Investments LLC in the Research Triangle Park of North Carolina.",
-            "L3": {
+            "current":"I currently work as a Senior Full-Stack Software Engineer at Fidelity Investments LLC in the Research Triangle Park of North Carolina.",
+            "roles": [{
                 "title": "(L3) Associate Full-Stack Software Engineer",
                 "dates":"January 2022 - June 2023",
                 "description": "I began my career as a Software Engineer in January 2022 at Fidelity Investments as part of their new-graduate technical training program, LEAP. After learning about the Fidelity enterprise work environment and technology stack, I was placed onto the NetBenefits Homepage team within the Workplace Investing business unit, where I worked as an (L3) Associate Full-Stack Software Engineer for a bit over a year."
-            },
-            "L4": {
+            },{
                 "title": "(L4) Full-Stack Software Engineer",
-                "dates": "June 2023 - Present",
-                "description": "As a Full-Stack Software Engineer on the NetBenefits Homepage team, I do a bit of everything to support the business and technical requirements of the organization. I work on a team with about 10 other developers, QA engineers, systems analyists, and other contributors to implement solutions to various division and company-wide initiatives. I work across out technology stack, from creating new micro frontend components with Angular and Lit-Element to new backend services with SpringBoot and Maven, as well as update legacy systems to remain in compliance, deploy apps with Jenkins and IBM uDeploy, and monitor dashboards and logs using tools like Splunk and Datadog."
+                "dates": "June 2023 - Dec 2025",
+                "description": "As a Full-Stack Software Engineer on two NetBenefits Homepage teams, I did a bit of everything to support the business and technical requirements of the organization. I worked on a smaller team with about 8 other technical staff such as developers, QA engineers, systems analysts, and other contributors to implement solutions to various division and company-wide initiatives. I worked across out technology stack, from creating new micro frontend components with Angular and Lit-Element to new backend services with SpringBoot and Maven, as well as update legacy systems to remain in compliance, deploy apps with Jenkins and IBM uDeploy, and monitor dashboards and logs using tools like Splunk and Datadog."
+            },{
+                "title": "(L5) Senior Full-Stack Software Engineer",
+                "dates": "June 2023 - Dec 2025",
+                "description": "I currently work as a Senior Full-Stack Software Engineer on my second NetBenefits Homepage team, promoted one year after beginning work on my second technical team. In this role, I'm relied on for more leadership responsibilities such as mentoring engineers, leading projects, participating in hiring panels, and collaborating with other teams to ensure our work is aligned with the broader goals of the company. I continue to work across the technology stack, but also spend more time designing solutions and making architectural decisions to ensure our systems are scalable, maintainable, and efficient. I primarily work on UI and Data Acces front end libraries (Angular, Lit-Element, Monorepo, Nx), both legacy and modernized backend services (SpringBoot, Java, Maven), and deployment and monitoring tools (GitHub, JFrog, Jenkins, IBM uDeploy, AWS, Splunk, Datadog). I rely heavily on AI Tooling to let me rocket through my work and have been a vocal advocate for the use of AI tools across my teams and the company as a whole."
             }
+            ]
         }
     },
     "feedback": {
