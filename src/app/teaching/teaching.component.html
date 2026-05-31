@@ -1,45 +1,40 @@
 <div class="teaching-container">
-    <div class="row justify-center">
-      <h2 class="text-center">Teaching Experience</h2>
-    </div>
-  
-    <div class="row justify-center mb-4">
-      <div class="col">
-        <img src={{teachingText.photos.fredBrooks.path}} class="rounded img-responsive center-block d-block mx-auto" alt={{teachingText.photos.fredBrooks.title}} title={{teachingText.photos.fredBrooks.title}} style="max-height: 300px; max-width: 500px;" />
-        <p class="text-center">{{teachingText.photos.fredBrooks.caption}}</p>
-      </div>
-    </div>
-  
-    <div class="row justify-center mb-5">
-      <div class="row mx-3">
-        <h6 class="text-center">
-          {{teachingText.title}}
-        </h6>
-      </div>
-    </div>
-  
-    <div class="row justify-around mb-3">
-      <div class="d-flex flex-column flex-lg-row justify-content-between">
-        <div class="flex-grow-1 flex-shrink-1 flex-md-basis-0 mb-3 mx-2" *ngFor="let class of teachingText.classes">
-          <h4 class="text-center">{{class.title}}</h4>
-          <p class="text-center"><small>{{class.time}}</small></p>
-          <p class="text-center" *ngFor="let description of class.description">{{description}}</p>
-        </div>
-      </div>
-  
-    <div class="row justify-around mb-5">
-      <h6 class="text-center mb-3">{{teachingText.feedback.title}}</h6>
-      <ul class="list-group">
-        <li class="list-group-item text-center" *ngFor="let feedback of teachingText.feedback.feedback">"{{feedback}}</li>
-      </ul>
-    </div>
-  
-    <div class="row justify-center mb-4">
-      <div class="col">
-        <img src={{teachingText.photos.openHouse.path}} class="rounded img-responsive center-block d-block mx-auto" alt={{teachingText.photos.openHouse.title}} title={{teachingText.photos.openHouse.title}} style="max-height: 500px; max-width: 500px;" />
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <p class="text-center mx-5">{{teachingText.photos.openHouse.caption}}</p>
-      </div>
+  <div class="text-center">
+    <h2>Teaching Experience</h2>
+  </div>
+
+  <div class="teaching-photo text-center">
+    <img
+      [src]="teachingText.photos.fredBrooks.path"
+      [alt]="teachingText.photos.fredBrooks.title"
+      [title]="teachingText.photos.fredBrooks.title" />
+    <p>{{ teachingText.photos.fredBrooks.caption }}</p>
+  </div>
+
+  <div class="teaching-intro">
+    <h6 class="text-center">{{ teachingText.title }}</h6>
+  </div>
+
+  <div class="classes-row">
+    <div class="class-card" *ngFor="let class of teachingText.classes">
+      <h4 class="text-center">{{ class.title }}</h4>
+      <small class="class-time text-center d-block">{{ class.time }}</small>
+      <p class="text-center" *ngFor="let description of class.description">{{ description }}</p>
     </div>
   </div>
+
+  <div class="student-feedback">
+    <h6 class="text-center">{{ teachingText.feedback.title }}</h6>
+    <ul class="feedback-list">
+      <li *ngFor="let feedback of teachingText.feedback.feedback">"{{ feedback }}"</li>
+    </ul>
+  </div>
+
+  <div class="bottom-photo">
+    <img
+      [src]="teachingText.photos.openHouse.path"
+      [alt]="teachingText.photos.openHouse.title"
+      [title]="teachingText.photos.openHouse.title" />
+    <p>{{ teachingText.photos.openHouse.caption }}</p>
+  </div>
+</div>
