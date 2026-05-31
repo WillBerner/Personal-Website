@@ -4,27 +4,29 @@
   </div>
 
   <div class="text-center">
-    <img
-      [src]="workText.photos.oldTeamHomer.path"
-      [alt]="workText.photos.oldTeamHomer.title"
-      [title]="workText.photos.oldTeamHomer.title"
-      style="max-height: 300px;" />
-      <p class="photo-caption">{{ workText.photos.oldTeamHomer.caption }}</p>
-    </div>
-
-    <div class="work-intro">
-      <h6 class="text-center">{{ workText.descriptions.current }}</h6>
-    </div>
-
-    <div class="roles-row">
-      @for (role of roles; track role) {
-        <div class="role-card">
-          <h6 class="text-center">{{ role.title }}</h6>
-          <div class="text-center">
-            <span class="role-dates">{{ role.dates }}</span>
-          </div>
-          <p class="text-center">{{ role.description }}</p>
-        </div>
-      }
-    </div>
+    <img [src]="workText.photos.teamHomer2023.path" [alt]="workText.photos.teamHomer2023.title"
+      [title]="workText.photos.teamHomer2023.title" style="max-height: 300px;" />
+    <p class="photo-caption">{{ workText.photos.teamHomer2023.caption }}</p>
   </div>
+
+  <div class="work-intro">
+    <h6 class="text-center">{{ workText.descriptions.current }}</h6>
+  </div>
+
+  <div class="roles-row">
+    @for (role of roles; track role) {
+    <div class="role-card">
+      <h6 class="text-center">{{ role.title }}</h6>
+      <div class="text-center">
+        <span class="role-dates">{{ role.dates }}</span>
+      </div>
+      <p class="text-center">{{ role.description }}</p>
+    </div>
+    }
+  </div>
+  <div class="text-center">
+      <img [src]="workText.photos.teamCardinal2025.path" [alt]="workText.photos.teamCardinal2025.title"
+        [title]="workText.photos.teamCardinal2025.title" style="max-height: 300px;" />
+      <p class="photo-caption">{{ workText.photos.teamCardinal2025.caption }}</p>
+    </div>
+</div>

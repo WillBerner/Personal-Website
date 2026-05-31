@@ -200,10 +200,15 @@
     },
     "enterprise": {
         "photos": {
-            "oldTeamHomer": {
-                "title": "Fidelity NetBenefits Homepage Team out to happy hour in 2023",
-                "caption": "Local North Carolina members of the Fidelity NetBenefits Homepage Team",
+            "teamHomer2023": {
+                "title": "NetBenefits Homepage Team Homer out to happy hour in 2023",
+                "caption": "Local North Carolina members of the NetBenefits Homepage Team Homer, (2023)",
                 "path": "./assets/images/work/OldTeamHomer.jpeg"
+            },
+            "teamCardinal2025": {
+                "title": "NetBenefits Homepage Team Cardinal out to lunch together in 2025",
+                "caption": "Members of the NetBenefits Homepage Team Cardinal out to lunch over Quarterly Planning, (2025)",
+                "path": "./assets/images/work/TeamCardinal2025.jpg"
             }
         },
         "descriptions": {
