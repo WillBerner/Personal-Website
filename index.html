@@ -10,11 +10,15 @@
 
   <script type="text/javascript">
     (function (l) {
+      // Check if we have an encoded path in the URL
       if (l.search[1] === '/') {
+        // Decode the path segments
         var decoded = l.search.slice(1)
           .split('&')
           .map(function (s) { return s.replace(/~and~/g, '&'); })
           .join('?');
+
+        // Replace the URL without reloading
         window.history.replaceState(null, null,
           l.pathname.slice(0, -1) + decoded + l.hash
         );
