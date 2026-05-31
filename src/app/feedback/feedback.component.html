@@ -2,6 +2,13 @@
   <div class="row justify-content-center mt6">
     <h2 class="text-center">Enterprise Work Feedback</h2>
   </div>
+  <div class="row justify-center">
+      <div class="row mx-3">
+        <h6 class="text-center">
+          {{feedbackText.description}}
+        </h6>
+      </div>
+    </div>
     <div class="feedback-item" *ngFor="let feedback of feedbackText.fidelity">
       <div class="person-info">
         <h3>{{feedback.name}}</h3>

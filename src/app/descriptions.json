@@ -227,28 +227,42 @@
     },
     "feedback": {
         "title": "Enterprise Feedback",
+        "description": "Some feedback I've received from my colleagues at Fidelity Investments and our time working together:",
         "fidelity": [
             {
+                "name": "Sirisha Madu",
+                "role": "Software Engineer",
+                "time": "One Year",
+                "feedback": "I've really enjoyed working with Will Berner at Fidelity Investments. He is technically strong, collaborative, and always supportive to the team. Along with his expertise in Angular, Java and frontend/backend architecture, he also has strong experience with Spring Boot applications, AWS deployments, and production release activities, which makes him a well-rounded engineer. I especially appreciate his willingness to mentor others, share knowledge, and handle challenges with a positive and calm mindset. He consistently focuses on delivering high-quality, scalable solutions while being a great teammate to work with. I'm grateful for the opportunity to work alongside Will and would highly recommend him to any team or organization."
+            },{
+                "name": "Keerthana Thoddoon Ravi",
+                "role": "Software Engineer",
+                "time": "Two Years",
+                "feedback": "It was a pleasure working with Will Berner at Fidelity. Although we were part of different teams, we collaborated closely on a complex application integration project, which resulted in significant enhancements. Will's expertise in Angular was truly impressive, and he consistently fostered an environment of open communication and mutual respect, allowing space for my contributions and suggestions for further improvement. His ability to provide constructive feedback while also encouraging creative solutions greatly enhanced the development process. Together, we successfully delivered the project to production, where it received outstanding feedback from stakeholders. I highly recommend Will for any future projects, as he is not only technically skilled but also an excellent collaborator who prioritizes team success."
+            },{
+                "name": "Hemapriya Sampath",
+                "role": "Software Engineer",
+                "time": "Nine Months",
+                "feedback": "I've had the pleasure of working with Will Berner for the last few months at Fidelity and in this short time, he has consistently impressed me with his dedication and expertise. Will is an incredibly talented software engineer, consistently delivering high-quality code and innovative solutions. One of Will's standout qualities is his empathetic nature. He has a remarkable ability to understand and connect with colleagues, which fosters a supportive and collaborative work environment. His empathy ensures that everyone feels heard and valued, contributing to the overall well-being and morale of the team."
+            },{
                 "name": "Cristina Wong",
                 "role": "QA Engineer",
-                "time": "Two years",
+                "time": "Two Years",
                 "feedback": "Will has been wonderful to work with in the two years that we have worked together at Fidelity Investments. He is a gifted engineer who has particularly stood out by the positive energy he has brought to the team. I have admired his strong communication skills and engagement with our professional community. Moreover, the team could always rely on him when we were in a pinch! He would be an excellent asset to any software team."
             },
             {
                 "name": "Mounika Chigurupati",
                 "role": "QA Engineer",
-                "time": "18 months",
+                "time": "18 Months",
                 "feedback": "In the 18 months I've collaborated with Will, I've come to recognize his exceptional professionalism. His guidance was instrumental in understanding the functionalities of graphQL APIs for me and his patience in educating others is commendable. Will's work ethic and communication abilities are truly impressive. He demonstrates remarkable adaptability to various situations and business environments. His active role in organizing team-building activities has greatly enhanced our team's rapport. However, it's his readiness to assist others that truly distinguishes him. Working alongside Will has been a gratifying experience."
             },
             {
                 "name": "Arijit Paul",
                 "role": "Senior Software Engineer",
-                "time": "18 months",
+                "time": "18 Months",
                 "feedback": "Will is a highly skilled & detail-oriented software developer. I had the pleasure of working with Will at Fidelity Investments for about a year and a half. I was impressed by his technical expertise and his ability to deal with difficult problems effortlessly. He handles multiple projects with competing priorities extremely effectively. Super nice guy and always willing to help a team member. I highly recommend Will as a software engineer and true team-player."
             }
         ],
-        "unc": [],
-        "other": [],
         "endorsements": [
             "Git",
             "Javascript",
