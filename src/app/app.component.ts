@@ -9,7 +9,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Will Berner\'s Portfolio';
+  title = 'Will\'s Website';
   menuOpen = false;
 
   toggleMenu() {
