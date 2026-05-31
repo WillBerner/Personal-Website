@@ -7,6 +7,7 @@ import { TeachingComponent } from './teaching/teaching.component';
 import { ResearchComponent } from './research/research.component';
 import { WorkComponent } from './work/work.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { FreelanceComponent } from './freelance/freelance.component';
 
 // Routes, AKA pages on my website
 const homeRoute = {
@@ -27,6 +28,9 @@ const workRoute = {
 const feedbackRoute = {
     path: 'feedback', component: FeedbackComponent
 }
+const freelanceRoute = {
+    path: 'freelance', component: FreelanceComponent
+}
 
 export const routes: Routes = [
     homeRoute, 
@@ -34,5 +38,6 @@ export const routes: Routes = [
     teachingRoute,
     researchRoute,
     workRoute,
-    feedbackRoute
+    feedbackRoute,
+    freelanceRoute
 ];
