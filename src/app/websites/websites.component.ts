@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 
-import descriptions from '../descriptions.json';
+import descriptions from '../content.json';
 
 @Component({
     selector: 'app-work',

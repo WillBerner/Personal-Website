@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { NgClass } from '@angular/common';
 
-import text from '../descriptions.json'
+import text from '../content.json'
 
 @Component({
     selector: 'app-work',

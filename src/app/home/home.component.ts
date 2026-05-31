@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 
-import text from '../descriptions.json'
+import text from '../content.json'
 
 @Component({
     selector: 'app-home',
