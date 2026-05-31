@@ -1,17 +1,39 @@
-<nav>
-  <ul>
-    <li><a routerLink="/" href="/">Will Berner</a></li>
+<nav class="navbar">
+  <a class="nav-brand" routerLink="/" (click)="closeMenu()">Will Berner</a>
+
+  <!-- Desktop links (inside navbar) -->
+  <ul class="nav-links">
     <li><a routerLink="/education">Education</a></li>
     <li><a routerLink="/teaching">Teaching Experience</a></li>
     <li><a routerLink="/research">Research Experience</a></li>
     <li><a routerLink="/work">Enterprise Experience</a></li>
     <li><a routerLink="/feedback">Enterprise Feedback</a></li>
   </ul>
+
+  <!-- Mobile hamburger button -->
+  <button
+    class="hamburger"
+    [class.open]="menuOpen"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="menuOpen"
+    aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+
+<!-- Mobile drawer (outside navbar, slides down below it) -->
+<div class="nav-drawer" [class.open]="menuOpen" role="menu">
+  <a routerLink="/education"  (click)="closeMenu()">Education</a>
+  <a routerLink="/teaching"   (click)="closeMenu()">Teaching Experience</a>
+  <a routerLink="/research"   (click)="closeMenu()">Research Experience</a>
+  <a routerLink="/work"       (click)="closeMenu()">Enterprise Experience</a>
+  <a routerLink="/feedback"   (click)="closeMenu()">Enterprise Feedback</a>
+</div>
 
 <main class="main">
   <div class="content">
     <router-outlet />
   </div>
 </main>
-
