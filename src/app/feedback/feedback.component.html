@@ -1,22 +1,21 @@
 <div class="feedback-container container">
-  <div class="row justify-content-center mt6">
+  <div class="row justify-content-center mt-4">
     <h2 class="text-center">Enterprise Work Feedback</h2>
   </div>
-  <div class="row justify-center">
-      <div class="row mx-3">
-        <h6 class="text-center">
-          {{feedbackText.description}}
-        </h6>
-      </div>
-    </div>
-    <div class="feedback-item" *ngFor="let feedback of feedbackText.fidelity">
-      <div class="person-info">
-        <h3>{{feedback.name}}</h3>
-        <p class="role">{{feedback.role}}</p>
-        <p>{{feedback.time}}</p>
-      </div>
-      <div class="feedback-text">
-        <p>"{{feedback.feedback}}"</p>
-      </div>
+  <div class="row justify-center mb-4">
+    <div class="row mx-3">
+      <h6 class="text-center">{{ feedbackText.description }}</h6>
     </div>
   </div>
+
+  <div class="feedback-item" *ngFor="let feedback of feedbackText.fidelity">
+    <div class="person-info">
+      <h3>{{ feedback.name }}</h3>
+      <p class="person-role">{{ feedback.role }}</p>
+      <span class="person-time">{{ feedback.time }}</span>
+    </div>
+    <div class="feedback-text">
+      <p>{{ feedback.feedback }}</p>
+    </div>
+  </div>
+</div>
