@@ -46,7 +46,7 @@ export class WebsitesComponent implements OnInit {
     // Send email using EmailJS
     emailjs.send(
       'service_od18hs7',
-      'template_9f7x8yq',
+      'template_5s2cwxq',
       {
         to_email: 'will.o.berner@gmail.com',
         from_name: formData.name,
