@@ -7,10 +7,10 @@
   h2 {
     font-size: 26px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: #76a923;
     margin-bottom: 8px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #1a1a2e;
+    border-bottom: 3px solid #76a923;
     display: inline-block;
   }
 
@@ -39,7 +39,7 @@
 
 .person-info {
   flex: 0 0 220px;
-  background: linear-gradient(160deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(160deg, #006044 0%, #005038 100%);
   padding: 28px 20px;
   text-align: center;
   display: flex;
@@ -58,7 +58,7 @@
 }
 
 .person-role {
-  color: #a8b4d8;
+  color: #b8e6b8;
   font-size: 13px;
   margin: 0;
 }
@@ -66,8 +66,8 @@
 .person-time {
   display: inline-block;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #d0d8f0;
+  background-color: rgba(75, 205, 62, 0.18);
+  color: #4BCD3E;
   font-size: 12px;
   padding: 3px 12px;
   border-radius: 20px;
@@ -87,7 +87,7 @@
     left: 24px;
     font-size: 72px;
     line-height: 1;
-    color: #e0e4f0;
+    color: #E5F1D4;
     font-family: Georgia, serif;
     pointer-events: none;
   }
@@ -98,7 +98,7 @@
     color: #444;
     margin: 0;
     padding-left: 16px;
-    border-left: 3px solid #1a1a2e;
+    border-left: 3px solid #76a923;
     font-style: italic;
   }
 }
