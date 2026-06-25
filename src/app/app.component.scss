@@ -15,7 +15,7 @@
 }
 
 // ── Desktop ──────────────────────────────────────────────────────────────────
-@media (min-width: 868px) {
+@media (min-width: 1076px) {
   .navbar {
     padding: 0 1.5rem;
     height: 60px;
@@ -47,7 +47,7 @@
 }
 
 // ── Mobile ───────────────────────────────────────────────────────────────────
-@media (max-width: 867.99px) {
+@media (max-width: 1075.99px) {
   .nav-links { display: none; }
 
   .hamburger {

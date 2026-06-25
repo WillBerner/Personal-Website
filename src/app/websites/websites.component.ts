@@ -68,7 +68,7 @@ export class WebsitesComponent implements OnInit {
       },
       (error) => {
         this.submissionError = true;
-        this.submissionMessage = 'Sorry, there was an error sending your message. Please try again or contact me directly.';
+        this.submissionMessage = 'Sorry, there was an error sending your message. Please try again or contact me directly at will.o.berner@gmail.com.';
         this.isSubmitting = false;
       }
     );

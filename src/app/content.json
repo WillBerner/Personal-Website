@@ -231,7 +231,7 @@
     },
     "feedback": {
         "title": "Enterprise Feedback",
-        "description": "Some feedback I've received from my colleagues at Fidelity Investments and our time working together:",
+        "description": "Some public feedback I've received from my colleagues at Fidelity Investments and our time working together:",
         "fidelity": [
             {
                 "name": "Sirisha Madu",
@@ -302,9 +302,15 @@
         },{
             "name": "Fidelity Investments NetBenefits Homepage (Post Login)",
             "type": "Enterprise Web Application",
-            "description": "The NetBenefits Homepage is the landing page for Fidelity Investments' NetBenefits website, which is the primary website for Fidelity's Workplace Investing business unit. The homepage is a highly customized and personalized experience for each user, built out of a number of standalone client and server applications, featuring a variety of widgets and components that provide users with quick access to their account information, news, and other relevant content. I worked on two different teams responsible for the homepage over the course of three years, contributing to both frontend and backend development work to support various initiatives and projects.",
+            "description": "The NetBenefits Homepage is the landing page for Fidelity Investments' NetBenefits website, which is the primary website for Fidelity's Workplace Investing business unit. The homepage is a highly customized and personalized experience for each user, built out of a number of standalone client and server applications, featuring a variety of widgets and components that provide users with quick access to their account information, news, and other relevant content.",
             "stack": ["Angular", "Lit-Element", "Nx", "Spring Boot", "Java", "Maven"],
             "url": "https://www.NetBenefits.com"
+        },{
+            "name": "The Snorf Zone",
+            "type": "E-Commerce Web Store",
+            "description": "The Snorf Zone is is a small, basic E-Commerce web store which I built for my younger sister to help her sell her unique, handmade, collectable anime plushies. The site features a custom design and layout to showcase her products, as well as a shopping cart and checkout system using Stripe for payment processing. The site is built with Angular and hosted on Render.com.",
+            "stack": ["Angular", "Node", "CSS", "Express", "Stripe", "Render.com"],
+            "url": "https://willberner.github.io/The-Snorf-Zone/"
         }]
     }
 }
