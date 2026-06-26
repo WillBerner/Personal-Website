@@ -1,6 +1,11 @@
 <div class="education-container container">
   <section class="academic-degrees text-center">
     <h2>Education</h2>
+
+    <div class="text-center">
+      <p class="text-center"><small>August 2012 - June 2016</small></p>
+    </div>
+
     <div class="degree-container mb-4">
       <div class="degree-image">
         <img src={{educationText.unc.photoPath}} alt="UNC Logo" class="img-fluid rounded">
@@ -31,7 +36,7 @@
         <h3>Main Coursework</h3>
         <ul>
           @for (course of educationText.unc.coursework.cs; track course) {
-            <li>{{course}}</li>
+          <li>{{course}}</li>
           }
         </ul>
       </div>
@@ -39,7 +44,7 @@
         <h3>Other Major-Based Coursework</h3>
         <ul>
           @for (course of educationText.unc.coursework.math; track course) {
-            <li>{{course}}</li>
+          <li>{{course}}</li>
           }
         </ul>
       </div>
@@ -58,10 +63,10 @@
   <section class="certifications">
     <h2>Certifications</h2>
     @for (certificate of educationText.unc.certifications; track certificate) {
-      <ul>
-        <h4>{{ certificate.title }}</h4>
-        <li>{{ certificate.description }}</li>
-      </ul>
+    <ul>
+      <h4>{{ certificate.title }}</h4>
+      <li>{{ certificate.description }}</li>
+    </ul>
     }
   </section>
 
@@ -69,10 +74,10 @@
     <h2>Extracurricular Activities</h2>
     <div class="quadrants-container">
       @for (extra of educationText.unc.extracurriculars; track extra) {
-        <div class="quadrant">
-          <h3 class="text-center">{{extra.title}}</h3>
-          <p class="text-center">{{extra.description}}</p>
-        </div>
+      <div class="quadrant">
+        <h3 class="text-center">{{extra.title}}</h3>
+        <p class="text-center">{{extra.description}}</p>
+      </div>
       }
     </div>
   </section>
