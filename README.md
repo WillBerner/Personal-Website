@@ -31,6 +31,9 @@ This portfolio website provides an overview of:
 - HTML5
 - CSS3
 - JavaScript
+- Angular
+- GH Pages
+- GH Actions
 
 ## 💼 Contact
 
