@@ -1,10 +1,12 @@
 {
     "home": {
-        "title": "My name is Will and I'm a Senior Full Stack Software Engineer at Fidelity Investments.",
+        "title": "Will's Website",
         "description": [
-            "I'm currently working as a Senior Software Engineer at Fidelity Investments on one of a handful of NetBenefits Homepage teams. I love any sort of programming from OOP to Functional, but enjoy web development the most","I'm a long time resident of central North Carolina - first of Chapel Hill and now of Durham. I became interested in computer science when I was in middle school by building custom computers. I thought technology was incredibly important considering how much I used it daily, so I thought I'd demystify the magic myself and learn how it all worked.",
-            "As a freshman I ended up loving my first programming course at UNC, was immediately recruited to be a TA, and went on to help teach intro courses for the next five semesters. With languages such as Java, Typescript, and Python, I've taught a wide range of topics such as Object-Oriented vs Functional Programming, ES6 and higher-order functions, reference vs value types, and parsing scientific data for analysis. In addition, I assisted with research on multiple projects in the Computer Science Department for over two years as part of the Graphics and Virtual Reality Research Group.",
-            "When I don't have VSCode pulled up I'm either out exercising, at home watching European Football, or playing with my seven-year-old dog, Sudo."
+            "Hey there! I'm Will — a Senior Software Engineer and Technical Lead at Fidelity Investments, where I help run the NetBenefits Homepage platform.",
+            "I've called central North Carolina home for most of my life, first in Chapel Hill and now in Durham. My interest in software started back in middle school, when I got hooked on building custom computers. I was using technology constantly and wanted to understand how it actually worked under the hood — so I set out to demystify it myself.",
+            "That curiosity followed me to UNC-Chapel Hill, where I fell in love with my first programming course as a freshman. I was recruited to TA it, and ended up teaching Computer Science courses for the next five semesters — covering everything from Object-Oriented vs. Functional programming to ES6 higher-order functions and parsing scientific data in Python. Alongside teaching, I spent over two years doing undergraduate research with UNC's Graphics and Virtual Reality Research Group.",
+            "These days, I'm at Fidelity Investments on the NetBenefits Homepage web platform, a role I've grown into since graduating. I love the full stack — front-end, back-end, DevOps, deployment, all of it — and I'm always chasing the next framework or tool worth learning.",
+            "When I'm not staring at VSCode, you'll usually find me out exercising, working on home improvement projects, watching European football, or getting bossed around by my seven-year-old dog, Sudo."
         ]
     },
     "education": {
@@ -294,6 +296,12 @@
             "stack": ["Angular", "CSS", "HTML"],
             "url": "https://www.MaxwellBerner.com"
         },{
+            "name": "The Snorf Zone Shop",
+            "type": "E-Commerce Web Store",
+            "description": "The Snorf Zone is a small, basic E-Commerce web store which I built for my younger sister to help her sell her unique, handmade, collectable anime plushies. It features a custom design and layout to showcase her products, as well as a shopping cart and checkout system using Stripe for payment processing. The frontend site is built with Angular, with the backend server built with Express and hosted on Render.com.",
+            "stack": ["Angular", "Node", "CSS", "Express", "Stripe", "Render.com"],
+            "url": "https://www.thesnorfzone.com/"
+        },{
             "name": "This Website",
             "type": "Portfolio",
             "description": "My own personal website portfolio. I designed and built this site to showcase my work experience, education, research, and teaching. I wanted to create a site that was simple, clean, and easy to navigate while also being visually appealing. The site is built with Angular and hosted on GitHub Pages.",
@@ -305,12 +313,6 @@
             "description": "The NetBenefits Homepage is the landing page for Fidelity Investments' NetBenefits website, which is the primary website for Fidelity's Workplace Investing business unit. The homepage is a highly customized and personalized experience for each user, built out of a number of standalone client and server applications, featuring a variety of widgets and components that provide users with quick access to their account information, news, and other relevant content.",
             "stack": ["Angular", "Lit-Element", "Nx", "Spring Boot", "Java", "Maven"],
             "url": "https://www.NetBenefits.com"
-        },{
-            "name": "The Snorf Zone",
-            "type": "E-Commerce Web Store",
-            "description": "The Snorf Zone is is a small, basic E-Commerce web store which I built for my younger sister to help her sell her unique, handmade, collectable anime plushies. The site features a custom design and layout to showcase her products, as well as a shopping cart and checkout system using Stripe for payment processing. The site is built with Angular and hosted on Render.com.",
-            "stack": ["Angular", "Node", "CSS", "Express", "Stripe", "Render.com"],
-            "url": "https://willberner.github.io/The-Snorf-Zone/"
         }]
     }
 }
